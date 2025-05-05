@@ -12,10 +12,19 @@ export default function AdminHeader() {
             <Link to="/admin/dashboard" className="admin-nav-link"><b>Dashboard</b></Link>
           </li>
           <li className="admin-nav-item">
-            <Link to="/admin/manage-users" className="admin-nav-link"><b>Manage Users</b></Link>
+            <Link to="/admin/manage-landlords" className="admin-nav-link"><b>Manage Landlords</b></Link>
           </li>
           <li className="admin-nav-item">
-            <Link to="/admin/settings" className="admin-nav-link"><b>Settings</b></Link>
+            <Link to="/admin/manage-tenants" className="admin-nav-link"><b>Manage Tenants</b></Link>
+          </li>
+          <li className="admin-nav-item">
+            <Link to="/admin/manage-properties" className="admin-nav-link"><b>Manage Properties</b></Link>
+          </li>
+          <li className="admin-nav-item">
+            <Link to="/admin/complaints" className="admin-nav-link"><b>Complaints</b></Link>
+          </li>
+          <li className="admin-nav-item">
+            <Link to="/admin/bookings" className="admin-nav-link"><b>Bookings</b></Link>
           </li>
           <li className="admin-nav-item">
             <Link to="/" className="admin-nav-link"><b>Logout</b></Link>

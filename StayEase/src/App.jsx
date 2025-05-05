@@ -26,6 +26,21 @@ import TenantHeader from "./components/pages/Tenant/TenantHeader";
 // Common
 import CommonHeader from "./components/CommonHeader";
 import Footer from "./components/Footer";
+import ManageLandlords from "./components/pages/Admin/ManageLandlords";
+import ManageTenants from "./components/pages/Admin/ManageTenants";
+import ManageProperties from "./components/pages/Admin/ManageProperties";
+import ManageComplaints from "./components/pages/Admin/ManageComplaints";
+import ManageBookings from "./components/pages/Admin/ManageBookings";
+import AddProperty from "./components/pages/Landlord/AddProperty";
+import MyProperties from "./components/pages/Landlord/MyProperties";
+import LandlordBookings from "./components/pages/Landlord/LandlordBookings";
+import LandlordComplaints from "./components/pages/Landlord/LandlordComplaints";
+import ViewProperties from "./components/pages/Tenant/ViewProperties";
+import MyBookings from "./components/pages/Tenant/MyBookings";
+import MyComplaints from "./components/pages/Tenant/MyComplaints";
+import SubmitComplaint from "./components/pages/Tenant/SubmitComplaint";
+import TenantProfile from "./components/pages/Tenant/TenantProfile";
+import LandlordProfile from "./components/pages/Landlord/LandlordProfile";
 
 function App() {
   return (
@@ -114,6 +129,111 @@ function App() {
           <>
             <TenantHeader />
             <TenantDashboard />
+            <Footer />
+          </>
+        } />
+        <Route path="/admin/manage-landlords" element={
+          <>
+            <AdminHeader />
+            <ManageLandlords />
+            <Footer />
+          </>
+        } />
+        <Route path="/admin/manage-tenants" element={
+          <>
+            <AdminHeader />
+            <ManageTenants />
+            <Footer />
+          </>
+        } />
+        <Route path="/admin/manage-properties" element={
+          <>
+            <AdminHeader />
+            <ManageProperties />
+            <Footer />
+          </>
+        } />
+        <Route path="/admin/complaints" element={
+          <>
+            <AdminHeader />
+            <ManageComplaints />
+            <Footer />
+          </>
+        } />
+        <Route path="/admin/bookings" element={
+          <>
+            <AdminHeader />
+            <ManageBookings />
+            <Footer />
+          </>
+        } />
+        <Route path="/landlord/add-property" element={
+          <>
+            <LandlordHeader />
+            <AddProperty />
+            <Footer />
+          </>
+        } />
+        <Route path="/landlord/properties" element={
+          <>
+            <LandlordHeader />
+            <MyProperties />
+            <Footer />
+          </>
+        } />
+        <Route path="/landlord/bookings" element={
+          <>
+            <LandlordHeader />
+            <LandlordBookings />
+            <Footer />
+          </>
+        } />
+        <Route path="/landlord/complaints" element={
+          <>
+            <LandlordHeader />
+            <LandlordComplaints />
+            <Footer />
+          </>
+        } />
+        <Route path="/tenant/view-properties" element={
+          <>
+            <TenantHeader />
+            <ViewProperties />
+            <Footer />
+          </>
+        } />
+        <Route path="/tenant/bookings" element={
+          <>
+            <TenantHeader />
+            <MyBookings />
+            <Footer />
+          </>
+        } />
+        <Route path="/tenant/my-complaints" element={
+          <>
+            <TenantHeader />
+            <MyComplaints />
+            <Footer />
+          </>
+        } />
+        <Route path="/tenant/add-complaints" element={
+          <>
+            <TenantHeader />
+            <SubmitComplaint />
+            <Footer />
+          </>
+        } />
+        <Route path="/tenant/tenant-profile" element={
+          <>
+            <TenantHeader />
+            <TenantProfile />
+            <Footer />
+          </>
+        } />
+        <Route path="/landlord/landlord-profile" element={
+          <>
+            <LandlordHeader />
+            <LandlordProfile />
             <Footer />
           </>
         } />

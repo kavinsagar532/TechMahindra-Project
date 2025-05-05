@@ -1,27 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../../../styles/Admin/AdminDashboard.css";
 
 export default function AdminDashboard() {
   return (
     <div className="admin-dashboard-container">
-      <div className="admin-dashboard-main">
-        <h2 className="admin-dashboard-title">Welcome to Admin Dashboard</h2>
-        <div className="admin-dashboard-content">
-          <p className="admin-dashboard-description">
-            Manage tenants, landlords, properties, and more.
-          </p>
-          <div className="admin-dashboard-actions">
-            <Link to="/admin/landlords" className="admin-dashboard-btn">
-              View Landlords
-            </Link>
-            <Link to="/admin/tenants" className="admin-dashboard-btn">
-              View Tenants
-            </Link>
-            <Link to="/admin/properties" className="admin-dashboard-btn">
-              View Properties
-            </Link>
-          </div>
+      <h2 className="admin-dashboard-title">Admin Dashboard</h2>
+      <div className="admin-dashboard-grid">
+        <div className="admin-dashboard-card">
+          <h3>Total Landlords</h3>
+          <p>25</p>
+        </div>
+        <div className="admin-dashboard-card">
+          <h3>Total Tenants</h3>
+          <p>80</p>
+        </div>
+        <div className="admin-dashboard-card">
+          <h3>Total Properties</h3>
+          <p>45</p>
+        </div>
+        <div className="admin-dashboard-card">
+          <h3>Total Bookings</h3>
+          <p>120</p>
+        </div>
+        <div className="admin-dashboard-card">
+          <h3>Total Complaints</h3>
+          <p>10</p>
         </div>
       </div>
     </div>

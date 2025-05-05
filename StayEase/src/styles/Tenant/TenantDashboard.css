@@ -1,41 +1,41 @@
-/* Dashboard Container */
 .tenant-dashboard-container {
-    padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  /* Dashboard Title */
-  .tenant-dashboard-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  /* Dashboard Description */
-  .tenant-dashboard-description {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* Dashboard Actions */
-  .tenant-dashboard-actions {
-    display: flex;
-    gap: 20px;
-  }
-  
-  /* Dashboard Button */
-  .tenant-dashboard-btn {
-    padding: 12px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .tenant-dashboard-btn:hover {
-    background-color: #0056b3;
-  }
-  
+  padding: 2rem 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tenant-dashboard-title {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+}
+
+.tenant-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.tenant-dashboard-card {
+  background: #eff6ff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+  border-left: 6px solid #2563eb;
+  transition: transform 0.3s ease;
+}
+
+.tenant-dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.tenant-dashboard-card h3 {
+  font-size: 1.3rem;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.tenant-dashboard-card p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0f172a;
+}
